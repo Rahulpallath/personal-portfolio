@@ -21,3 +21,8 @@ runConfig:
   # See https://firebase.google.com/docs/app-hosting/configure#secret-parameters
   # - variable: API_KEY
   #   secret: myApiKeySecret
+  build:
+  command: npm run build
+  env:
+    - name: NODE_ENV
+      value: "production"
